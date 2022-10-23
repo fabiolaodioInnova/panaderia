@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/estilo.css">
+    <title>Realizar pedido</title>
+</head>
+<body>
+
+    <form action="" class="form-pedidos">
+        <section class="container-main-form">
+
+            <img class="logoForm" src="./style/Logo-removebg-preview.png" alt="">
+
+            <div class="containerForm-name">
+                <div>
+                    <h3>Nombre*</h3>
+                    <input type="text" class="inputName" required>
+                    <label for=""></label>   
+                    </div>
+                <div>
+                    <h3>Apellidos*</h3>
+                    <input type="text" class="inputLastName" required>
+                    <label for=""></label>   
+                </div>
+            </div>
+
+            <div>
+                <h3>Email</h3>
+                <input type="email" class="inputEmail" required>
+                <label for=""></label>   
+            </div>
+
+            <div class="container-sabores">
+                <h3>Sabores</h3>
+
+                <div>
+                    <input type="radio" value="chocolate" id="chocolate" name="sabores">
+                    <label for="chocolate">Chocolate</label>
+                </div>
+                <div>
+                    <input type="radio" value="vainilla" id="vainilla" name="sabores">
+                    <label for="vainilla">Vainilla</label>
+                </div>
+                <div>
+                    <input type="radio" value="fresa" id="fresa" name="sabores">
+                    <label for="fresa">Fresa</label>
+                </div>
+                <div>
+                    <input type="radio" value="seco" id="seco" name="sabores">
+                    <label for="seco">Seco</label>
+                </div>
+            </div>
+
+            <div class="container-decoracion">
+                <h3 class="title-decoracion">Decoracion</h3>
+                <div class="subcontainer-decoracion uno">
+                    <div>
+                        <input type="checkbox" value="Almendras" id="Almendras" name="decoracion">
+                        <label for="Almendras">Almendras</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="vainilla" id="vainilla" name="decoracion">
+                        <label for="vainilla">Vainilla</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="fresa" id="fresa" name="decoracion">
+                    <label for="fresa">Fresa</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="macadamia" id="macadamia" name="decoracion">
+                        <label for="macadamia">Macadamia</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="chocolate" id="chocolate" name="decoracion">
+                        <label for="chocolate">Chocolate</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="frutos" id="frutos" name="decoracion">
+                        <label for="frutos">Frutos Rojos</label> 
+                    </div>
+                    <div>
+                        <input type="checkbox" value="cafe" id="cafe" name="decoracion">
+                        <label for="cafe">Cafe tostado</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="ferrero" id="ferrero" name="decoracion">
+                        <label for="ferrero">Ferrero Rocher</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="guayabita" id="guayabita" name="decoracion">
+                        <label for="guayabita">Guayabita</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="sorbeto" id="sorbeto" name="decoracion">
+                        <label for="sorbeto">Sorbeto</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="nuez" id="nuez" name="decoracion">
+                        <label for="nuez">Nuez Moscada</label>
+                    </div>
+                             
+                </div>
+                <div class="subcontainer-decoracion dos">
+                    <div>
+                        <input type="checkbox" value="mani" id="mani" name="decoracion">
+                        <label for="mani">Mani</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="arandanos" id="arandanos" name="decoracion">
+                        <label for="arandanos">Arandanos</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="frambuesas" id="frambuesas" name="decoracion">
+                        <label for="frambuesas">Frambuesas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="flores" id="flores" name="decoracion">
+                        <label for="flores">Flores</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="donas" id="donas" name="decoracion">
+                        <label for="donas">Donas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="helado" id="helado" name="decoracion">
+                        <label for="helado">Helado</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="avena" id="avena" name="decoracion">
+                        <label for="avena">Avena</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="chia" id="chia" name="decoracion">
+                        <label for="chia">Chia</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="alfajores" id="alfajores" name="decoracion">
+                        <label for="alfajores">Alfajores mixtos</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="conos" id="conos" name="decoracion">
+                        <label for="conos">Conos</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="brigadeiros" id="brigadeiros" name="decoracion">
+                        <label for="brigadeiros">Brigadeiros</label>
+                    </div> 
+                </div>
+            </div>
+            <section class="anotaciones">
+                <h3 class="title-notes">Anotaciones para el pedido</h3>
+                <input type="text" name="" id="" class="input-notes">
+            </section>
+
+            <button class="btn-form"><a href="./pedidoExito.html">Realizar pedido</a></button>
+            
+        </section>
+    </form>
+</body>
+</html>

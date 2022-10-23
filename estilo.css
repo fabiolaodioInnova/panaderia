@@ -1,0 +1,270 @@
+:root{
+    --color1:#F5E8C7;
+    --color2:#ECCCB2;
+    --color3:#DEB6AB;
+    --color4:#AC7088;
+
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:'Fuzzy Bubbles', cursive; ;
+}
+
+input [type="radio"]:checked+label{
+    font-weight: bold;
+    color: red;
+}
+    
+
+
+/*Estilizacion del header */
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    height: 10%;
+    align-items: center;
+    justify-items: center;
+    -webkit-box-shadow: 10px 10px 3px -4px rgba(0,0,0,0.18);
+    -moz-box-shadow: 10px 10px 3px -4px rgba(0,0,0,0.18);
+    box-shadow: 10px 10px 3px -4px rgba(0,0,0,0.18);
+}
+
+.img-logo{
+    height: 100%;
+    width: 150px;
+    object-fit:contain;  
+}
+/*Estilizacion del header */
+
+
+.container-menu{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(340px, auto ));
+    margin: 5%;
+}
+
+.pastel{
+    display: grid;
+    grid-template-areas: 'pastel-img pastel-description'
+                        'pastel-decoration pastel-decoration'
+                        'pastel-btn pastel-btn';
+    place-items: center;
+    border: solid var(--color1) 2px ;
+    box-shadow: 4px 4px var(--color1);
+    padding: 30px;
+    
+}
+.text-description{
+    text-align: center;
+    padding: 10px;
+}
+.pastel-description{
+    grid-area: pastel-description;
+    padding: 20px;
+}
+.pastel img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.pastel-img{
+    grid-area:pastel-img ;
+}
+.pastel-decoration{
+    grid-area: pastel-decoration;
+}
+
+.btn-pedido{
+    background-color: var(--color4);
+    height: 30px;
+    width: 80px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.pastel-btn{
+    grid-area: pastel-btn;
+}
+.btn-pedido a{
+   text-decoration: none;
+   color: white;
+}
+.btn-pedido a:hover{
+    text-decoration:underline;
+    font-size: 14px;
+ }
+
+
+/*Estilizacion del footer */
+footer{
+    display: flex;
+    place-content: center;
+    bottom: 0;
+    border-top:2px solid var(--color3);
+    
+}
+.footer{
+
+    position:absolute;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    
+}
+/*Estilizacion del footer */
+
+
+
+/*FORMULARIOS */
+/*FORMULARIOS */
+/*FORMULARIOS */
+.container-main-form{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 60px  60px  60px ;
+    background-color: rgba(245,232,199,0.4);
+ 
+}
+
+
+.logoForm{
+    width: 140px;
+    height: 140px;
+    place-self: center;
+}
+
+.inputEmail{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(222,182,171,0.4);
+    border: none;
+    border-radius: 6px;
+}
+
+.inputName{
+    width: 95%;
+    height: 40px;
+    background-color: rgba(222,182,171,0.4);
+    border: none;
+    border-radius: 6px;
+}
+
+.inputLastName{
+    width: 95%;
+    height: 40px;
+    background-color: rgba(222,182,171,0.4);
+    border: none;
+    border-radius: 6px;
+}
+.containerForm-name{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+
+
+.form-pedidos{
+    display: flex;
+    place-content: center;
+}
+
+
+.container-sabores{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container-decoracion{
+    display: grid;
+    
+      
+}
+.title-decoracion{
+    grid-column-start: 1 ;
+    grid-column-end: 3 ;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.subcontainer-decoracion{
+    display: flex;
+    flex-direction: column;
+    place-content: center; 
+
+}
+
+.subcontainer-decoracion .uno{
+    grid-column-start: 1 ;
+    grid-column-end: 2 ;
+   
+}
+.subcontainer-decoracion .dos{
+    grid-column-start: 2 ;
+    grid-column-end: 3 ;
+    
+}
+
+.btn-form{
+    background-color: #AC7088;
+    border: none;
+    width: 80%;
+    height: 40px;
+    place-self: center;
+    margin-top: 20px;
+    border-radius: 8px;
+    
+}
+.btn-form a{
+    text-decoration: none;
+    color: white;
+    
+}
+.anotaciones{
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+}
+.title-notes{
+    margin:    10px;
+    place-self: center;
+}
+
+.input-notes{
+    border: none;
+    height: 40px;
+    background-color: #F5E8C7;
+}
+
+/*PAGINA DE LA COMPRA EXITOSA*/
+
+
+.page-succes{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    height: 100vh;
+    color: white;
+    font-size: 60px
+   
+}
+
+.container-buy{
+    background-color: rgba(172,112,136,0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20%;
+    text-align: center;
+}
+
+.gift-bread{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
